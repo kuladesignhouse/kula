@@ -49,8 +49,12 @@ h2 {
 }
 
 form {
-  width: 700px;
+  width: 310px;
   margin: 0 0 0 30px;
+
+  @include md {
+    width: 510px;
+  }
 }
 
 div.input {
@@ -99,20 +103,20 @@ button.submit-btn {
   text-transform: capitalize;
   color: #fff;
   font-weight: bold;
-  width: 700px;
+  width: 310px;
   height: 40px;
   margin: 40px 0 70px 0;
   background-color: rgb(74, 197, 214);
   cursor: pointer;
+
+  @include md {
+    width: 510px;
+  }
+
 }
 
 button.submit-btn:hover {
-  text-transform: capitalize;
-  color: #fff;
-  font-weight: bold;
-  width: 700px;
-  height: 40px;
-  margin: 40px 0 70px 0;
+  margin: 39px 0 70px -1px;
   background-color: rgb(74, 197, 225);
   box-shadow: 1px 1px 5px 0px #ADADAD;
      -webkit-box-shadow: 1px 1px 5px 0px #ADADAD;
